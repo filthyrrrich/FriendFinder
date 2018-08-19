@@ -1,11 +1,15 @@
+//Dependencies
 var friends = require("../data/friends");
 
 
 module.exports = function(app) {
+    
+    //route to display friends API List
     app.get("/api/friends", function(req, res) {
         res.json(friends);
     });
 
+    //route for posting to API List
     app.post("/api/friends", function(req, res) {
         
         //grabs the scores array from users input

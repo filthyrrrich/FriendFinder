@@ -1,5 +1,3 @@
-
-
 var friends = [
     {
         name: "President Camacho",
